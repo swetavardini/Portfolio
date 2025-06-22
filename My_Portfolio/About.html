@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swetavardini Soundarraj | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1c1c1c, #0f0f0f);
+      color: #fff;
+      overflow-x: hidden;
+      perspective: 1000px;
+    }
+    .animated {
+      animation: fadeInUp 1.2s ease forwards;
+      transform: translateZ(0);
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    nav {
+      background-color: rgba(26, 26, 26, 0.95);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 -2px 15px rgba(0,0,0,0.6);
+      backdrop-filter: blur(8px);
+    }
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+    .nav-links a {
+      color: #ffd60a;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: transform 0.3s ease, color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform-style: preserve-3d;
+    }
+    .nav-links a:hover {
+      color: #b5179e;
+      transform: rotateX(20deg) scale(1.1);
+    }
+    .nav-links span {
+      font-size: 0.8em;
+      margin-top: 3px;
+      color: #fff;
+    }
+    .section {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+      align-items: center;
+      background: linear-gradient(to bottom right, #1c1c1c, #1a1a1a);
+      box-shadow: inset 0 0 60px rgba(255, 255, 255, 0.03);
+    }
+    .image-side {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 1000px;
+    }
+    .rotating-photo {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: rotate 8s infinite linear;
+    }
+    .rotating-photo img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid white;
+      backface-visibility: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .rotating-photo img.back {
+      transform: rotateY(180deg);
+    }
+    @keyframes rotate {
+      from { transform: rotateY(0deg); }
+      to { transform: rotateY(360deg); }
+    }
+    .content-side {
+      flex: 2;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transform: rotateX(3deg);
+    }
+    .content-side h1 {
+      font-size: 2.8em;
+      margin-bottom: 25px;
+      color: #ffd60a;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+    }
+    .content-side h1 span {
+      color: #b5179e;
+    }
+    .content-side p {
+      margin: 10px 0;
+      line-height: 1.8;
+      font-size: 1.2em;
+      color: #ddd;
+      animation: fadeInUp 1.4s ease forwards;
+    }
+    .emoji {
+      margin-right: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #000;
+      color: #ccc;
+      font-size: 0.9em;
+      box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <main class="section animated">
+    <div class="image-side">
+      <div class="rotating-photo">
+        <img src="images/linkedin.jpg" alt="Swetavardini Front">
+        <img src="images/alternate.png" class="back" alt="Swetavardini Back">
+      </div>
+    </div>
+    <div class="content-side">
+      <h1>HELLO EVERYONE!<br><span> I'm Swetavardini P S </span>
+      <br><span> Fresh Graduate</span></h1>
+      <p><span class="emoji">⭐</span> Recent graduate passionate about building scalable and user-friendly full stack web applications.</p>
+      <p><span class="emoji">⭐</span> Experience in developing MERN stack apps, responsive design, and REST APIs.</p>
+      <p><span class="emoji">⭐</span> Skilled in debugging, version control, and collaborating in agile teams.</p>
+      <p><span class="emoji">⭐</span> Enthusiastic about learning new technologies and solving real-world problems through code.</p>
+    </div>
+  </main>
+
+  <nav>
+    <div class="nav-links">
+      <a href="about.html">
+        <i class="fas fa-user"></i>
+        <span>About</span>
+      </a>
+      <a href="projects.html">
+        <i class="fas fa-diagram-project"></i>
+        <span>Projects</span>
+      </a>
+      <!-- <a href="certifications.html">
+        <i class="fas fa-certificate"></i>
+        <span>Certs</span>
+      </a> -->
+      <!-- <a href="awards.html">
+        <i class="fas fa-award"></i>
+        <span>Awards</span>
+      </a> -->
+      <a href="contact.html">
+        <i class="fas fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- <footer>
+    <p>&copy; 2025 Swetavardini Soundarraj. All rights reserved.</p>
+  </footer> -->
+</body>
+</html>
