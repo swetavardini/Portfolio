@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Swetavardini Soundarraj</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body, html {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1c1c1c, #0f0f0f);
+      color: #fff;
+    }
+    h1 {
+      text-align: center;
+      padding: 30px 0 0 0;
+      font-size: 2.5em;
+      color: #ffd60a;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    }
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 50px;
+    }
+    .project-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .project-content {
+      padding: 20px;
+    }
+    .project-content h2 {
+      margin-top: 0;
+      color: #b5179e;
+    }
+    .project-content p {
+      color: #ccc;
+      line-height: 1.5em;
+    }
+    .project-link {
+      margin-top: 15px;
+      display: inline-block;
+      background: #ffd60a;
+      color: #000;
+      padding: 8px 14px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .project-link:hover {
+      background: #b5179e;
+      color: #fff;
+    }
+    nav {
+      background-color: rgba(26, 26, 26, 0.95);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 -2px 15px rgba(0,0,0,0.6);
+      backdrop-filter: blur(8px);
+    }
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+    .nav-links a {
+      color: #ffd60a;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: transform 0.3s ease, color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-links a:hover {
+      color: #b5179e;
+      transform: rotateX(15deg) scale(1.1);
+    }
+    .nav-links span {
+      font-size: 0.8em;
+      margin-top: 3px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Projects</h1>
+  <section class="projects-container">
+    <div class="project-card">
+      <img src="images/new.jpg" alt="Asian Series">
+      <div class="project-content">
+        <h2>Asian Series</h2>
+        <p>Stylized responsive layout project using CSS to display and showcase Asian series in a creative grid.</p>
+        <a class="project-link" href="https://github.com/swetavardini/Asian_series" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="images/bank.jpeg" alt="Banking System">
+      <div class="project-content">
+        <h2>Banking System</h2>
+        <p>A Java-based banking system handling account creation, deposit/withdrawal, and transaction records.</p>
+        <a class="project-link" href="https://github.com/swetavardini/Banking_System" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="images/school.png" alt="School Management">
+      <div class="project-content">
+        <h2>School Management System</h2>
+        <p>Manages student, teacher, and class data using Java. Supports adding, editing, and reporting functionalities.</p>
+        <a class="project-link" href="https://github.com/swetavardini/School-Management-System" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="images/hospital.jpeg" alt="Hospital Management">
+      <div class="project-content">
+        <h2>Hospital Management</h2>
+        <p>Python-based application to track patients, doctors, appointments, and medical records efficiently.</p>
+        <a class="project-link" href="https://github.com/swetavardini/Hospital_Management_System" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="images/rpa.jpeg" alt="RPA Automation">
+      <div class="project-content">
+        <h2>RPA Automation</h2>
+        <p>Automation bot built to handle repetitive tasks using UI automation principles and scripts.</p>
+        <a class="project-link" href="https://github.com/swetavardini/RPA_Automation" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="images/parking.jpeg" alt="Parking Booking & Management System">
+      <div class="project-content">
+        <h2>Parking Management</h2>
+        <p>JavaScript project that allows users to find and manage parking space with a user-friendly interface.</p>
+        <a class="project-link" href="https://github.com/swetavardini/parking-management" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">
+        <i class="fas fa-user"></i>
+        <span>About</span>
+      </a>
+      <a href="projects.html">
+        <i class="fas fa-diagram-project"></i>
+        <span>Projects</span>
+      </a>
+      <!-- <a href="certifications.html">
+        <i class="fas fa-certificate"></i>
+        <span>Certs</span>
+      </a>
+      <a href="awards.html">
+        <i class="fas fa-award"></i>
+        <span>Awards</span>
+      </a> -->
+      <a href="contact.html">
+        <i class="fas fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+  </nav>
+</body>
+</html>
